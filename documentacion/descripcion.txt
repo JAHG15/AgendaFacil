@@ -1,0 +1,19 @@
+Nombre del proyecto: AgendaFacil
+
+Problema:
+Muchas barberías administran sus citas de manera manual,
+utilizando libretas, llamadas o mensajes. Esto puede
+provocar errores en los horarios, citas duplicadas y
+dificultades para organizar el trabajo.
+
+Objetivo:
+Desarrollar un sistema que facilite la administración
+de citas en una barbería, permitiendo organizar los
+horarios y mejorar la atención a los clientes.
+
+Descripción:
+AgendaFacil es un proyecto tecnológico enfocado en
+la gestión de citas para barberías. Su propósito es
+facilitar la reservación de servicios, organizar los
+horarios disponibles y ayudar al negocio a llevar un
+mejor control de sus clientes y citas.
