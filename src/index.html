@@ -4,49 +4,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgendaFacil | Barberías</title>
+
+    <title>AgendaFacil | Sistema para Barberías</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #080808;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            color: #d4af37;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #242424, #080808);
+        }
+
+        .hero h2 {
+            color: #d4af37;
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #ddd;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #111;
+            padding: 13px 28px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+        }
+
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #d4af37;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            max-width: 750px;
+            margin: auto;
+            color: #ccc;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background-color: #222;
+            padding: 30px 20px;
+            border-radius: 10px;
+            flex: 1 1 210px;
+            max-width: 280px;
+            border: 1px solid #444;
+        }
+
+        .card h3 {
+            color: #d4af37;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #ccc;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #39301b, #171717);
+            border: 1px solid #8d742b;
+            border-radius: 12px;
+            padding: 45px 20px;
+            margin-top: 30px;
+        }
+
+        .banner .scissors {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background-color: #1c1c1c;
+        }
+
+        .contact p {
+            margin: 10px;
+            color: #ddd;
+        }
+
+        footer {
+            background-color: #080808;
+            text-align: center;
+            padding: 22px;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 45px 5%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
-        <h1>AgendaFacil</h1>
-        <p>Tu barbería organizada, tus citas bajo control.</p>
+        <h1>✂ AgendaFacil</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
     </header>
 
     <main>
 
-        <section>
-            <h2>Administra tu barbería de manera sencilla</h2>
+        <section class="hero" id="inicio">
+            <h2>Tu barbería, siempre organizada</h2>
 
             <p>
-                AgendaFacil es una solución tecnológica
-                que permite organizar las citas de tus clientes,
-                administrar los horarios y mejorar la atención
-                de tu barbería.
+                Administra tus citas, organiza tus horarios
+                y mejora la experiencia de tus clientes
+                con AgendaFacil, el sistema pensado
+                para barberías modernas.
             </p>
 
-            <h2>¿Por qué utilizar AgendaFacil?</h2>
-
-            <ul>
-                <li>Organización de citas y horarios.</li>
-                <li>Mejor administración del tiempo.</li>
-                <li>Mayor control de los clientes.</li>
-                <li>Reducción de errores en las reservaciones.</li>
-            </ul>
+            <a href="#contacto" class="btn">
+                Conoce más
+            </a>
         </section>
 
         <section>
-            <h2>Una barbería mejor organizada</h2>
+            <h2>¿Qué es AgendaFacil?</h2>
 
-            <div style="background-color: #222; color: white;
-                        padding: 35px; text-align: center;">
-                <h2>AGENDAFACIL</h2>
-                <p>Más organización, mejor servicio y clientes satisfechos.</p>
-                <p>✂️ Tu negocio merece una mejor administración.</p>
+            <p class="description">
+                AgendaFacil es un sistema de gestión de citas
+                diseñado para ayudar a las barberías a organizar
+                sus reservaciones y administrar mejor sus servicios.
+                Su objetivo es simplificar el trabajo diario,
+                ahorrar tiempo y ofrecer una atención de calidad.
+            </p>
+        </section>
+
+        <section id="beneficios">
+            <h2>Beneficios de utilizar AgendaFacil</h2>
+
+            <div class="benefits">
+
+                <div class="card">
+                    <h3>📅 Citas organizadas</h3>
+                    <p>
+                        Administra las reservaciones
+                        de tus clientes de forma sencilla.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>⏰ Ahorra tiempo</h3>
+                    <p>
+                        Mantén un mejor control de los horarios
+                        y evita confusiones.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>👤 Control de clientes</h3>
+                    <p>
+                        Facilita la organización
+                        de la información de tus clientes.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>⭐ Mejor servicio</h3>
+                    <p>
+                        Ofrece una experiencia más organizada
+                        y profesional.
+                    </p>
+                </div>
+
             </div>
+
+            <div class="banner">
+                <div class="scissors">✂️</div>
+
+                <h2>AgendaFacil</h2>
+
+                <p>
+                    Más organización, más eficiencia
+                    y una mejor experiencia para tus clientes.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contacto">
+            <h2>Contáctanos</h2>
+
+            <p>¿Quieres conocer más sobre AgendaFacil?</p>
+
+            <p>Correo: contacto@agendafacil.com</p>
+
+            <p>Teléfono: 618 123 4567</p>
+
+            <p>Ubicación: Durango, México</p>
+
+            <a href="mailto:contacto@agendafacil.com" class="btn">
+                Comienza ahora
+            </a>
         </section>
 
     </main>
+
+    <footer>
+        <p>
+            © 2026 AgendaFacil.
+            Proyecto académico de gestión de citas para barberías.
+        </p>
+    </footer>
 
 </body>
 </html>
